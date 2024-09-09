@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyShop X-Max</div>
+        <div class="cart">
+            Cart: <span id="cart-count">0</span> items
+            <button id="view-order-summary">View Order Summary</button>
+        </div>
+    </header>
+ 
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <div id="product-list" class="product-container"></div> <!-- Product space -->
+        </section>
+    </main>
+ 
+    <!-- Order Summary Dialog -->
+    <div id="order-summary-dialog" class="order-summary">
+        <h2>Order Summary</h2>
+        <ul id="order-summary-items"></ul>
+        <div>Total Items: <span id="total-items-count">0</span></div>
+        <div>Total Price: $<span id="total-price-amount">0.00</span></div>
+        <button id="checkout-btn">Proceed to Checkout</button>
+        <button id="close-summary">Close</button>
+    </div>
+ 
+    <!-- Payment Form Modal -->
+    <div id="payment-form-modal" class="payment-form">
+        <h2>Enter Payment Details</h2>
+        <form id="payment-form">
+            <label for="card-name">Name on Card</label>
+            <input type="text" id="card-name" required>
+ 
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" maxlength="16" required>
+ 
+            <label for="card-expiry">Expiry Date (MM/YY)</label>
+            <input type="text" id="card-expiry" maxlength="5" required>
+ 
+            <label for="card-cvc">CVC</label>
+            <input type="text" id="card-cvc" maxlength="3" required>
+ 
+            <button type="submit">Pay</button>
+            <button type="button" id="cancel-payment">Cancel</button>
+        </form>
+    </div>
+ 
+    <script src="main.js"></script>
+</body>
+</html>

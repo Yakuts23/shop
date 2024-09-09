@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Produkt 1",
+        "price": 10.99,
+        
+        "images": ["kh1.jpg"]
+    },
+    {
+        "id": 2,
+        "name": "Produkt 2",
+        "price": 100.99,
+        
+        "images": ["handy1.jpg"]
+    },
+    {
+        "id": 3,
+        "name": "Produkt 3",
+        "price": 300.99,
+        
+        "images": ["Laptop.jpg"]
+    },
+    {
+        "id": 4,
+        "name": "Produkt 4",
+        "price": 40.99,
+        
+        "images": ["drucker.jpg"]
+    },
+    {
+        "id": 5,
+        "name": "Produkt 5",
+        "price": 25.99,
+        
+        "images": ["lampe.jpg"]
+    }
+]
+
